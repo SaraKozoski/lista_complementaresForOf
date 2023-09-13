@@ -7,11 +7,25 @@
     */
 
     //Entrada
-
-
+    const notasAluno = [7, 5, 9, 8];
+    let maior = 0;
+    let menor = 0;
+    let media = 0;
+    let soma = 0;
     //Processamento
-
+    for(const notas of notasAluno){
+        soma = soma + notas;
+    }
+    notasAluno.sort((a, b) => a-b);
+    menor = notasAluno[0];
+    maior = notasAluno[notasAluno.length - 1];
+    media = soma/notasAluno.length;
 
     //Saída
+    document.write(`O maior notas é ${maior} o menor notas é ${menor} a media dos notas é ${media}`);
+
+
+
+
 
 </script>
